@@ -1,0 +1,61 @@
+.cardapio{
+    display: grid;
+    gap: 3.2rem;
+    padding: 0 6rem;
+    grid-template-areas:  
+    "A B C"
+    "A E C"
+    "D E F";
+}
+
+.lista:nth-child(1) {
+        grid-area: A;
+    }
+
+.lista:nth-child(1):nth-child(2) {
+        grid-area: B;
+    }
+
+.lista:nth-child(3) {
+        grid-area: C;
+    }
+
+.lista:nth-child(4) {
+        grid-area: D;
+    }
+    
+.lista:nth-child(5) {
+        grid-area: E;
+    }
+    
+.lista:nth-child(6) {
+        grid-area: F;
+    }
+
+.img{
+    object-fit: cover;
+    width: 32rem;
+}
+
+
+
+
+
+
+
+
+.cardapio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*max-width: 10rem;
+    margin: 0 auto; */
+}
+
+.lista{
+}
+
+.lista .img{
+    width: 100%;
+    object-fit: cover;
+
+}

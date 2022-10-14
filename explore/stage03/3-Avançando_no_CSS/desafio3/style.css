@@ -1,0 +1,259 @@
+:root{
+    --ff-secundary: 'Palanquin', sans-serif;
+    --ff-third: 'Roboto', sans-serif;
+    --ff-footer: 'Open Sans', sans-serif;
+
+    --bg-primary: #8E9AAF;
+    --bg-logo: #CBC0D3;
+    --fc-secundary: #23053A;
+    --bg-legend: #FEEAFA;
+    --fc-legend: #4A4E69;
+    --bg-main: #EFF1FF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.page{
+    display: flex;
+}
+
+header{
+    width: 37.7rem;
+    height: 72rem; 
+    background: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 21rem;
+    height: 16rem;
+    margin: 3.2rem 0;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+.titulo{
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    letter-spacing: .3rem;
+    
+    background: var(--bg-logo);
+    width: 100%;
+    text-align: center;
+    padding:2rem 0;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.texto{
+    width: 27.5rem;
+    font-family: var(--ff-third);
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+    margin: 3rem 5rem 0;  
+}
+
+.texto span{
+    width: 27.5rem;
+    font-family: var(--ff-third);
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;  
+}
+
+.page__second{
+    margin: 6rem auto;
+    width: 62,3rem;
+}
+
+.cardapio{ 
+    display: grid;
+    gap: 3.2rem;
+    grid-template-areas:  
+    "A B C"
+    "D B F"
+    "D E F";
+    padding: 0 9rem;
+
+}
+
+section div:nth-child(1) {
+        grid-area: A;
+    }
+
+section div:nth-child(2) {
+        grid-area: B;
+    }
+
+section div:nth-child(3) {
+        grid-area: C;
+    }
+
+section div:nth-child(4) {
+        grid-area: D;
+    }
+    
+section div:nth-child(5) {
+        grid-area: E;
+    }
+    
+section div:nth-child(6) {
+        grid-area: F;
+    }
+
+.img{ 
+    width: 22rem;
+}
+
+.txt{
+    font-size:2rem;
+    font-weight: 400;
+    background: var(--bg-legend);
+    padding: 0.2rem 2.3rem;
+    border-radius: 2rem;
+    color: var(--fc-legend);
+    letter-spacing: .05rem;
+    line-height: 3.4rem;
+
+    position: absolute;
+    top: 5.2%;
+    left: 45%;
+}
+
+.lista{
+    position: relative;
+}
+
+
+
+footer{
+    margin: 6rem 0 0.5rem;
+    text-align: center;
+}
+
+footer p{
+    font-family: var(--ff-footer);
+    font-size: 1.4rem; 
+}
+
+footer span {
+    font-family: var(--ff-footer);
+    font-size: 1.4rem; 
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 425px) {
+
+    .page{
+        flex-direction: column;
+        align-items: center; 
+        margin: 0 auto;
+
+        
+    }
+
+    header{
+    width: 100%;
+    max-width: 100%;
+    height: 50rem;
+
+    }
+
+    .logo{
+        width: 18.7rem;
+    }
+
+    .texto{
+        color:#23053A;
+        font-size: 2rem;
+        font-family: var(--ff-secundary);
+        width: 33rem;
+        padding-bottom: 50rem; 
+        line-height: 2.2rem;
+    }
+
+    .texto span{
+        display: none;
+    }
+    
+    .cardapio{ 
+    display: grid;
+    grid-template-areas:  
+    "A""B""C""D""E""F";
+    padding-left: 5rem;
+}
+
+    section div:nth-child(1) {
+            grid-area: A;
+        }
+
+    section div:nth-child(2) {
+            grid-area: B;
+        }
+
+    section div:nth-child(3) {
+            grid-area: C;
+        }
+
+    section div:nth-child(4) {
+            grid-area: D;
+        }
+        
+    section div:nth-child(5) {
+            grid-area: E;
+        }
+        
+    section div:nth-child(6) {
+            grid-area: F;
+        }
+
+    .img{ 
+        width: 32rem;
+    }
+
+    .txt{
+    font-size:2rem;
+    font-weight: 400;
+    background: var(--bg-legend);
+    padding: 0.2rem 2.3rem;
+    border-radius: 2rem;
+    color: var(--fc-legend);
+    letter-spacing: .05rem;
+    line-height: 3.4rem;
+
+    position: absolute;
+    top: 5.2%;
+    left: 60%;
+}
+    
+    footer{
+        display: none;
+    }
+    }
+
+
+
+
+
+
+

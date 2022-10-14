@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Cream</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="logo 1.svg" alt="logo space cream">
+        <h1>space cream</h1>
+    </header>
+
+    <main>
+        <section>
+            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae
+            neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet</p>
+        </section>
+
+        <section class="sorvete"> 
+            <div class="lista">
+                <img class="img" src="sorvete1.png" alt="paletas">
+                <p class="txt">paletas</p>
+            </div>
+            <div class="lista">
+                <img class="img" src="sorvete2.png" alt="shakes">
+                <p class="txt">shakes</p>
+            </div>
+            <div class="lista">
+                <img class="img" src="sorvete3.png" alt="massas">
+                <p class="txt">massas</p>
+            </div>
+            <div class="lista">
+                <img class="img" src="sorvete4.png" alt="picolés">
+                <p class="txt">picolés</p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
+
+
+
+
+:root{
+    --ff-secundary: 'Palanquin', sans-serif;
+
+    --bg-primary: #8E9AAF;
+    --bg-logo: #CBC0D3;
+    --fc-secundary: #23053A;
+    --bg-legend: #FEEAFA;
+    --fc-legend: #4A4E69;
+    --bg-main: #EFF1FF;
+    
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 390px;
+    height: 279px;
+    background: var(--bg-primary);
+}
+
+header img{
+    width: 40%;
+    margin: 3.2rem 12rem 4rem;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+
+}
+
+header h1{
+    font-size: 4rem;
+    line-height: 3.4rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #ffffff;
+
+    text-align: center;
+    background: var(--bg-logo);
+    padding: 0.8rem;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+.texto{
+    width: 384px;
+    font-size: 1.5rem;
+    font-family: var(--ff-secundary);
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+    padding: 1.4rem 3.6rem;
+    margin-bottom: 5rem;
+}
+
+.sorvete{
+    width: 384px;
+    padding: 0 3rem;
+}
+
+.lista{
+    position: relative;
+    margin: 3.6rem 0;
+
+}
+
+.img {
+    animation: downtop 700ms 350ms backwards;
+    width: 100%;
+
+
+}
+
+.txt{
+    font-size:2rem;
+    background: var(--bg-legend);
+    padding: 0.2rem 2.3rem;
+    border-radius: 2rem;
+    color: var(--fc-legend);
+
+    position: absolute;
+    top: 2rem;
+    left: 20rem ;
+
+    animation: topdown 700ms;
+
+}
+
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
