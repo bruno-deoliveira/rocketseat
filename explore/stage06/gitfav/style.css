@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bc-color: #000;
+    --tf-color: #E1E1E1;
+    --bg-second-color: #06181c;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--tf-color);
+    background-color: var(--bc-color);
+
+    padding: 11.5rem 16rem;
+    margin: 0 auto;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 8.7rem;
+}
+.search_tool{
+    display: flex;
+    gap: .8rem;
+}
+
+#input-search{
+    background-color: var(--bg-second-color);
+    padding: 1.8rem;
+    min-width: 40.3rem;
+
+    border: none;
+    border-radius: 5px;
+
+    color: #FFFFFF
+}
+
+
+.search-button{
+    background: #065E7C;
+    border: 5px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem 3.2rem;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.search-button:hover{
+    background-color: white;
+    color: #065E7C;
+}
+
+.search-button:hover .hide{
+display: block;
+}
+
+.search-button:hover .nohide{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #4a808c;
+    border-radius: 1.2rem;
+}
+
+.nocontent{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    justify-content: center;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: #4E5455;
+
+    margin-top: 12rem;
+    margin-bottom: 21rem;
+}
+
+.estrela{
+    height: 15rem;
+    width: 15rem;
+}
+.noview{
+    display: none;
+}
+
+table{
+    border-spacing: 0;
+    
+    width: 100%;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+thead{
+    background-color: #092D38;
+}
+
+thead th.first-child{
+    border-top-left-radius: 1.2rem;
+}
+
+thead th.last-child{
+    border-top-right-radius: 1.2rem;
+}
+
+thead th, td{
+    text-align: center;
+    padding: 1.6rem;
+}
+
+tbody .user {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    padding-right: 10rem;
+    text-align: left;
+}
+
+tbody .user img{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+tbody .user a{
+    text-decoration: none;
+    color: var(--tf-color);
+}
+
+tbody .user a p {
+    font-weight: bold;
+    width: 12rem;
+}
+
+tbody .remove{
+    color: #F75A68;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+/*Essa linha abaixo toda em OBS: provavelmente seja retirada*/
+tbody tr:last-child .remove:last-of-type {
+    border-bottom-right-radius: 1.2rem;
+}
+
+tbody tr:last-child .user {
+    border-bottom-left-radius: 1.2rem;
+    overflow: hidden;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(6, 22, 27, 0.5);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #06181C;
+}
+
+tbody {
+    display: block;
+    overflow-y: auto;
+    min-height: 8.2rem;
+    max-height: 52rem;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}   
+
+tbody::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+tbody::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+tbody::-webkit-scrollbar-thumb {
+    background: #4A808C;
+    border-radius: 10px; 
+}
+
+

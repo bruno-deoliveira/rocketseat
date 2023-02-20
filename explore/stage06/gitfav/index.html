@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="./assets/Gitfav.svg" alt="Logo do GitFav">
+            <div class="search_tool">
+                <label for="input-search" class="sr-only">Digite o Github usarname que quer favoritar</label>
+                <input id="input-search" type="text" placeholder="Digite o Github usarname que quer favoritar">
+                <button class="search-button">
+                    <img class="nohide" src="./assets/star1.svg" alt="">
+                    <img class="hide" src="./assets/star2.svg" alt="">
+                    Favoritar
+                </button>
+            </div>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Repositories</th>
+                        <th>Followers</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <div class="tbody_container">
+                    <tbody>
+                        <!-- 
+                        <tr>
+                            <td class="user">
+                                <img src="https://github.com/maykbrito.png" alt="Imagem de maykbrito">
+                                <a href="https://github.com/maykbrito" target="_blank">
+                                    <p>Mayk Brito</p>
+                                    <span>maykbrito</span>
+                                </a>
+                            </td>
+                            <td class="repositories">
+                                76
+                            </td>
+                            <td class="followers">
+                                9589
+                            </td>
+                            <td>
+                                <button class="remove">remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="user">
+                                <img src="https://github.com/maykbrito.png" alt="Imagem de maykbrito">
+                                <a href="https://github.com/maykbrito" target="_blank">
+                                    <p>Mayk Brito</p>
+                                    <span>maykbrito</span>
+                                </a>
+                            </td>
+                            <td class="repositories">
+                                76
+                            </td>
+                            <td class="followers">
+                                9589
+                            </td>
+                            <td>
+                                <button class="remove">remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="user">
+                                <img src="https://github.com/maykbrito.png" alt="Imagem de maykbrito">
+                                <a href="https://github.com/maykbrito" target="_blank">
+                                    <p>Mayk Brito</p>
+                                    <span>maykbrito</span>
+                                </a>
+                            </td>
+                            <td class="repositories">
+                                76
+                            </td>
+                            <td class="followers">
+                                9589
+                            </td>
+                            <td>
+                                <button class="remove">remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="user">
+                                <img src="https://github.com/maykbrito.png" alt="Imagem de maykbrito">
+                                <a href="https://github.com/maykbrito" target="_blank">
+                                    <p>Mayk Brito</p>
+                                    <span>maykbrito</span>
+                                </a>
+                            </td>
+                            <td class="repositories">
+                                76
+                            </td>
+                            <td class="followers">
+                                9589
+                            </td>
+                            <td>
+                                <button class="remove">remove</button>
+                            </td>
+                        </tr>
+                    -->
+                    </tbody>
+                </div>
+            </table>
+
+            <div class="nocontent noview">
+                <img class="estrela" src="./assets/Estrela.svg" alt="">
+                <h1>Nenhum Favorito Ainda</h1>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
