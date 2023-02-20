@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Focus Timer 3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main class="base">
+
+        <div class="light_dark">
+            <button class="buttonLight"><img src="./assets/img/icon.svg" alt="modo light"></button>
+            <button class="buttonDark"><img src="./assets/img/icon (1).svg" alt="modo dark"></button>
+        </div>
+
+        <div class="controls_left">
+            <div class="timer">
+                <span class="minute">25</span>
+                <span>:</span>
+                <span class="second">00</span>
+            </div>
+            <div class="butt">
+                <div class="buttons">
+                    <button class="play"> <img src="./assets/img/play.svg" alt="play"></button>
+                    <button class="stop"> <img src="./assets/img/stop.svg" alt="stop"></button>
+                    <button class="mais"> <img src="./assets/img/+.svg" alt="aumentar tempo"></button>
+                    <button class="menos"> <img src="./assets/img/-.svg" alt="diminuir tempo"></button>
+                </div>
+                <div class="buttons-2">
+                    <button class="playD"> <img src="./assets/img/play_dark.svg" alt="play"></button>
+                    <button class="stopD"> <img src="./assets/img/stop_dark.svg" alt="stop"></button>
+                    <button class="maisD"> <img src="./assets/img/+dark.svg" alt="aumentar tempo"></button>
+                    <button class="menosD"> <img src="./assets/img/-dark.svg" alt="diminuir tempo"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sons_right">
+
+            <div class="top">
+                <div>
+                    <input type="range" min="1" max="100" value="50" class="controlsVolume1">
+                    <div class="song_light">
+                        <button class="forest_sound_off "><img src="./assets/img/Card_01_light.svg"
+                                alt="Floresta desligado"></button>
+                        <button class="forest_sound_on hide "><img src="./assets/img/Card_01.1_light.svg"
+                                alt="Floresta ligado"></button>
+                    </div>
+                    <div class="song_dark">
+                        <button class="forest_sound_off-2 "><img src="./assets/img/Card_01_dark.svg"
+                                alt="Floresta desligado"></button>
+                        <button class="forest_sound_on-2 hide"><img src="./assets/img/Card_01.1_dark.svg"
+                                alt="Floresta ligado"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="range" min="0" max="100" class="controlsVolume2">
+                    <div class="song_light">
+                        <button class="rain_sound_off"><img src="./assets/img/Card_02_light.svg"
+                                alt="Chuva ligado"></button>
+                        <button class="rain_sound_on hide"><img src="./assets/img/Card_02.1_light.svg"
+                                alt="Chuva desligado"></button>
+                    </div>
+                    <div class="song_dark">
+                        <button class="rain_sound_off-2"><img src="./assets/img/Card_02_dark.svg"
+                                alt="Chuva ligado"></button>
+                        <button class="rain_sound_on-2 hide"><img src="./assets/img/Card_02.1_dark.svg"
+                                alt="Chuva desligado"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div>
+                    <input type="range" min="1" max="100" value="50" class="controlsVolume3">
+                    <div class="song_light">
+                        <button class="coffee_sound_off"><img src="./assets/img/Card_03_light.svg"
+                                alt="Cafeteria desligado"></button>
+                        <button class="coffee_sound_on hide"><img src="./assets/img/Card_03.1_light.svg"
+                                alt="Cafeteria ligado"></button>
+                    </div>
+                    <div class="song_dark">
+                        <button class="coffee_sound_off-2 "><img src="./assets/img/Card_03_dark.svg"
+                                alt="Cafeteria desligado"></button>
+                        <button class="coffee_sound_on-2 hide "><img src="./assets/img/Card_03.1_dark.svg"
+                                alt="Cafeteria ligado">
+                    </div>
+                </div>
+
+                <div>
+                    <input type="range" min="1" max="100" value="50" class="controlsVolume4">
+                    <div class="song_light">
+                        <button class="fire_sound_off"><img src="./assets/img/Card_04_light.svg"
+                                alt="Lareira desligado"></button>
+                        <button class="fire_sound_on hide"><img src="./assets/img/Card_04.1_light.svg"
+                                alt="Lareira ligado"></button>
+                    </div>
+                    <div class="song_dark">
+                        <button class="fire_sound_off-2 "><img src="./assets/img/Card_04_dark.svg"
+                                alt="Lareira desligado"></button>
+                        <button class="fire_sound_on-2 hide"><img src="./assets/img/Card_04.1_dark.svg"
+                                alt="Lareira ligado"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/script.js" type="module"></script>
+    </main>
+</body>
+
+</html>
